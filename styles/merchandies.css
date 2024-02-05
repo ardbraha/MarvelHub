@@ -1,0 +1,76 @@
+.sectionsName {
+  width: fit-content;
+  margin: 2rem;
+  padding-bottom: .5rem;
+  border-bottom: 3px solid #ff0000;
+}
+
+.categories,
+.shoppingSection {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2rem 1rem;
+}
+
+.categoriesCard {
+  flex-basis: 18%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.categoriesCard:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.categoriesName {
+  padding: .5rem 1rem;
+}
+
+.banner {
+  padding: 15rem 2rem 2rem 3rem;
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1588497859490-85d1c17db96d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80');
+  background-position: 75% top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner h3 {
+  color: transparent;
+}
+
+.shoppingCards {
+  width: max(20%, 10rem);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.shoppingCards img {
+  margin: 2rem 0 1rem 0;
+}
+
+.shoppingCards:hover {
+  color: rgb(0, 117, 227);
+}
+
+.nav a {
+  text-shadow: 0 0 5px #ffffff;
+}
+
+@media (max-width: 50rem) {
+  .categoriesCard {
+    flex-basis: 30%;
+  }
+}
+
+@media (max-width: 40rem) {
+  .categoriesCard {
+    flex-basis: 40%;
+  }
+}
+
+@media (min-width: 55rem) {
+  .banner {
+    padding: 10rem 0 10rem 5rem;
+  }
+}

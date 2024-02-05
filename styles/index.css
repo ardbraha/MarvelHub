@@ -1,0 +1,43 @@
+.heroBanner {
+  position: relative;
+  padding-top: 1rem;
+}
+
+.heroBanner:after {
+  content:'';
+  background-image: url('https://cdn.pixabay.com/photo/2016/03/06/04/14/comics-1239698_1280.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  filter: brightness(30%);
+}
+
+.mainContent {
+  width: 100%;
+  text-align: center;
+  padding: 12.5rem 0 45vh 0;
+}
+
+.mainContent p {
+  margin-top: 1rem;
+}
+
+.mainButtons {
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.mainButtons a {
+  padding: .5rem 2rem;
+  border: 1.5px solid #ff0000;
+}
+
+.mainButtons a:hover {
+  background-color: #ff0000;
+}

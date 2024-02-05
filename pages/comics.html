@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/comics.css">
+  <link rel="icon" href="../assets/icons/icon.png">
+  <title>MarvelHub | Comics</title>
+</head>
+
+<body>
+  <header class="mainHeader flex">
+    <div class="headerLogo">
+      <a href="../index.html"><img src="../assets/icons/icon.png"></a>
+    </div>
+    <button data-visible="false" class="navToggle blackToggle transition pointer"></button>
+    <ul class="flex nav fs400 ffSans transition">
+      <li class="pointer transition"><a href="../index.html">Home</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/movies.html">Movies</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/shows.html">Shows</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/comics.html">Comics</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/games.html">Games</a></li>
+      <li id="onDesktop" class="dropdown pointer transition">
+        <button class="dropbtn pointer">Media &#9662;</button>
+        <div class="dropdown-content">
+          <a class="transition" href="../pages/movies.html">Movies</a>
+          <a class="transition" href="../pages/shows.html">Shows</a>
+          <a class="transition" href="../pages/comics.html">Comics</a>
+          <a class="transition" href="../pages/games.html">Games</a>
+        </div>
+      </li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/fanArt.html">Fan Art</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/news.html">News</a></li>
+      <li id="onDesktop" class="dropdown pointer transition">
+        <button class="dropbtn pointer">Community &#9662;</button>
+        <div class="dropdown-content">
+          <a class="transition" href="../pages/fanArt.html">Fan Art</a>
+          <a class="transition" href="../pages/news.html">News</a>
+        </div>
+      </li>
+      <li class="pointer transition"><a href="../pages/merchandise.html">Merchandise</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/about.html">About Us</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/contact.html">Contact Us</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/login.html">Log In</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/register.html">Register</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/profile.html">Profile</a></li>
+      <li id="onDesktop" class="dropdown pointer transition">
+        <button class="dropbtn pointer">About &#9662;</button>
+        <div class="dropdown-content">
+          <a class="transition" href="../pages/about.html">About Us</a>
+          <a class="transition" href="../pages/contact.html">Contact Us</a>
+        </div>
+      </li>
+      <li id="onDesktop" class="dropdown pointer transition">
+        <button class="dropbtn pointer textWhite"><a href="profile.html"><img class="navUser"
+              src="../assets/icons/user2.svg" style="border-color: #000000;"></a></button>
+        <div class="dropdown-content">
+          <a class="transition" href="../pages/login.html">Log In</a>
+          <a class="transition" href="../pages/register.html">Register</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+  <section>
+    <div class="comicsBanner flex">
+      <div class="container"><img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/90/5c6f1368ed5d0/clean.jpg"></div>
+      <div class="content">
+        <h2 class="fs700 ffOswald textRed uppercase">Marvel Comics</h2>
+        <p class="fs300 ffRoboto ">Marvel hits 25,000 comics! And here we have included Top 25 Marvel comics of All
+          Time! <br> For the full list of comics, click <a
+            href="https://www.marvel.com/comics?&options%5Boffset%5D=0&totalcount=12"
+            style="text-decoration: underline; color: rgb(0, 97, 181);" target="_blank">here</a>.</p>
+      </div>
+  </section>
+  <main class="container">
+    <h3 class="fs600 bold ffOswald topComics">Top Comics</h3>
+    <section class="comicsGrid grid container">
+      <a class="comicsCard transition" href="../pages/comics/infinityGauntlet.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/20/51f6911ce3cc3/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Infinity Gauntlet (1991) #1</h3>
+        <p class="fs200 textGray thin">Starlin, Perez</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/infinity.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/e/a0/5abc01506bfee/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Infinity (2013) #1</h3>
+        <p class="fs200 textGray thin">Hickman, Kubert</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/amazingFantasy.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/10/598363848588e/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Amazing Fantasy (1962) #15</h3>
+        <p class="fs200 textGray thin">Lee, Ditko</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/civilWar.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/e/f0/511307b2f1200/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Civil War (2006) #1</h3>
+        <p class="fs200 textGray thin">Millar, Mcniven</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/infinityWar.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/40/51f696c2a1263/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Infinity War (1992) #1</h3>
+        <p class="fs200 textGray thin">Starlin, Lim</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/deathvader.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/7/20/593063e9ae78d/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Darth Vader (2017) #1</h3>
+        <p class="fs200 textGray thin">Soule, Camuncoli</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/secretempire.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/20/5900ab4a19359/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Secret Empire (2017) #1</h3>
+        <p class="fs200 textGray thin">Spencer, Mcniven</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/civilwar2.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/b0/5728d5e57a5b2/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Civil War II (2016)</h3>
+        <p class="fs200 textGray thin">Bendis, Coipel</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/blackpanther.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/80/567065cfebad5/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Black Panther (2016) #1</h3>
+        <p class="fs200 textGray thin">Coates, Stelfreeze</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/avengers.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/1/00/51646f8d43394/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Avengers (2012) #1</h3>
+        <p class="fs200 textGray thin">Hickman, Weaver</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/thanos.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/5/03/582382b737a22/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Thanos (2016) #1</h3>
+        <p class="fs200 textGray thin">Lemire, Deodato</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/deadpool.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/8/a0/562e73baa2c04/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Deadpool (2015) #1</h3>
+        <p class="fs200 textGray thin">Duggan, Moore</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/secretwars.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/70/5cb736a3cdd49/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Secret Wars (2015) #1</h3>
+        <p class="fs200 textGray thin">Hickman, Ross</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/ultimatespiderman.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/90/519b7e7eb534a/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Ultimate Spider-Man (2000) #1</h3>
+        <p class="fs200 textGray thin">Bendis, Bagley</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/xmengold.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/4/04/58efdcf287a6f/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">X-Men: Gold (2017) #1</h3>
+        <p class="fs200 textGray thin">Guggenheim, Syaf</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/oldmanlogan.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/7/60/5939990e7d1ec/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Old Man Logan (2016) #25</h3>
+        <p class="fs200 textGray thin">Brisson, Deodato</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/astonishingxmen.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/a/50/5967e7b0e9d5d/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Astonishing X-Men (2017) #1</h3>
+        <p class="fs200 textGray thin">Soule, Cheung</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/spiderman.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/b/e0/56a7c0725bcbb/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Spider-Man (2016) #1</h3>
+        <p class="fs200 textGray thin">Bendis</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/allnewguardiansofthegalaxy.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/30/5900a84360ddf/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">All-New Guardians of the Galaxy (2017) #1</h3>
+        <p class="fs200 textGray thin">Duggan, Kuder</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/theamazingspiderman.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/d/40/5196582d03800/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">The Amazing Spider-Man (1963) #1</h3>
+        <p class="fs200 textGray thin">Lee, Ditko</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/weaponx.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/c0/58e7f904ee230/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Weapon X (2017) #1</h3>
+        <p class="fs200 textGray thin">Pak, Land</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/peterparker.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/40/5941aaad594a6/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Peter Parker: The Spectacular Spider-Man (2017) #1</h3>
+        <p class="fs200 textGray thin">Zdarsky, Kubert</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/xmenblue.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/7/40/58e7f9a46732d/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">X-Men: Blue (2017) #1</h3>
+        <p class="fs200 textGray thin">Bunn, Buffagni</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/captainamericasteveroger.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/b0/58ee3fbc609c3/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Captain America: Steve Rogers (2016) #16</h3>
+        <p class="fs200 textGray thin">Spencer, Libranda</p>
+      </a>
+      <a class="comicsCard transition" href="../pages/comics/deadpoolkillsthemarveluniversagain.html">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/e/00/5955392a07557/portrait_uncanny.jpg">
+        <h3 class="fs300 bold ffOswald">Deadpool Kills the Marvel Universe Again (2017) #1</h3>
+        <p class="fs200 textGray thin">Bunn, Talajic</p>
+      </a>
+    </section>
+  </main>
+  <footer class="textGray">
+    <hr style="width: 80%;">
+    <section class="flex upperFooter">
+      <div>
+        <a href="../index.html"><img style="width: 7.5rem; margin-top: 2rem;" src="../assets/icons/footerLogo.png"></a>
+      </div>
+      <div class="flex pagesSection">
+        <div>
+          <ul class="ffSans thin fs300">
+            <li class="footerPages transition flex"><a href="../index.html">Home</a></li>
+            <li class="footerPages transition"><a href="./movies.html">Movies</a></li>
+            <li class="footerPages transition"><a href="./shows.html">Shows</a></li>
+            <li class="footerPages transition"><a href="./comics.html">Comics</a></li>
+            <li class="footerPages transition unabled"><a href="./games.html">Games</a></li>
+            <li class="footerPages transition unabled"><a href="./fanArt.html">Fan Art</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="ffSans thin fs300">
+            <li class="footerPages transition abled"><a href="./games.html">Games</a></li>
+            <li class="footerPages transition abled"><a href="./fanArt.html">Fan Art</a></li>
+            <li class="footerPages transition"><a href="./news.html">News</a></li>
+            <li class="footerPages transition"><a href="./merchandise.html">Merchandise</a></li>
+            <li class="footerPages transition unabled"><a href="./about.html">About Us</a></li>
+            <li class="footerPages transition unabled"><a href="./contact.html">Contact Us</a></li>
+            <li class="footerPages transition unabled"><a href="./terms.html">Terms of Use</a></li>
+            <li class="footerPages transition unabled"><a href="./privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="ffSans thin fs300 abled">
+            <li class="footerPages transition"><a href="./about.html">About Us</a></li>
+            <li class="footerPages transition"><a href="./contact.html">Contact Us</a></li>
+            <li class="footerPages transition"><a href="./terms.html">Terms of Use</a></li>
+            <li class="footerPages transition"><a href="./privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="socials">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/twitterIcon.svg">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/facebookIcon.svg">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/instagramIcon.svg">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/youtubeIcon.svg">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/telegramIcon.svg">
+      </div>
+      <div>
+        <p class="ffSans thin copyright"> &copy; Copyright. All rights reserved.</p>
+      </div>
+    </section>
+  </footer>
+  <script src="../scripts/nav.js"></script>
+</body>
+
+</html>

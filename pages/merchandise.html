@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/merchandies.css  ">
+  <link rel="icon" href="../assets/icons/icon.png">
+  <title>MarvelHub | Merchandise</title>
+</head>
+
+<body>
+  <main>
+    <header class="mainHeader flex">
+      <div class="headerLogo">
+        <a href="../index.html"><img src="../assets/icons/icon.png"></a>
+      </div>
+      <button data-visible="false" class="navToggle blackToggle pointer transition"></button>
+      <ul class="flex nav fs400 ffSans transition">
+        <li class="pointer transition"><a href="../index.html">Home</a></li>
+        <li id="onMobile" class="pointer transition"><a href="../pages/movies.html">Movies</a></li>
+        <li id="onMobile" class="pointer transition"><a href="../pages/shows.html">Shows</a></li>
+        <li id="onMobile" class="pointer transition"><a href="../pages/comics.html">Comics</a></li>
+        <li id="onMobile" class="pointer transition"><a href="../pages/games.html">Games</a></li>
+        <li id="onDesktop" class="dropdown pointer transition">
+          <button class="dropbtn pointer">Media &#9662;</button>
+          <div class="dropdown-content">
+            <a class="transition" href="../pages/movies.html">Movies</a>
+            <a class="transition" href="../pages/shows.html">Shows</a>
+            <a class="transition" href="../pages/comics.html">Comics</a>
+            <a class="transition" href="../pages/games.html">Games</a>
+          </div>
+        </li>
+        <li id="onMobile" class="pointer transition"><a href="../pages/fanArt.html">Fan Art</a></li>
+        <li id="onMobile" class="pointer transition"><a href="../pages/news.html">News</a></li>
+        <li id="onDesktop" class="dropdown pointer transition">
+          <button class="dropbtn pointer">Community &#9662;</button>
+          <div class="dropdown-content">
+            <a class="transition" href="../pages/fanArt.html">Fan Art</a>
+            <a class="transition" href="../pages/news.html">News</a>
+          </div>
+        </li>
+        <li class="pointer transition"><a href="../pages/merchandise.html">Merchandise</a></li>
+        <li id="onMobile" class="pointer transition"><a href="../pages/about.html">About Us</a></li>
+        <li id="onMobile" class="pointer transition"><a href="../pages/contact.html">Contact Us</a></li>
+        <li id="onMobile" class="pointer transition"><a href="../pages/login.html">Log In</a></li>
+        <li id="onMobile" class="pointer transition"><a href="../pages/register.html">Register</a></li>
+        <li id="onMobile" class="pointer transition"><a href="../pages/profile.html">Profile</a></li>
+        <li id="onDesktop" class="dropdown pointer transition">
+          <button class="dropbtn pointer">About &#9662;</button>
+          <div class="dropdown-content">
+            <a class="transition" href="../pages/about.html">About Us</a>
+            <a class="transition" href="../pages/contact.html">Contact Us</a>
+          </div>
+        </li>
+        <li id="onDesktop" class="dropdown pointer transition">
+          <button class="dropbtn pointer textWhite"><a href="profile.html"><img class="navUser"
+                src="../assets/icons/user2.svg" style="border-color: #000000;"></a></button>
+          <div class="dropdown-content">
+            <a class="transition" href="../pages/login.html">Log In</a>
+            <a class="transition" href="../pages/register.html">Register</a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <section class="banners">
+      <div class="banner">
+        <h3 class="fs700 ffOswald uppercase textWhite">Marvel Shopping!</h3>
+      </div>
+    </section>
+    <section class="container" style="margin: auto;">
+      <h2 class="ffOswald uppercase sectionsName">Filter by category</h2>
+      <div class="flex categories">
+        <div class="categoriesCard transition">
+          <a href="#clothings">
+            <img class="categoriesImg"
+              src="https://m.media-amazon.com/images/G/02/hardlines/CX/Search_CX_Test/RBS/xcm_banners_clothing-shoes-jewelry-sqppn_730x970_gb-en.jpg">
+            <p class="categoriesName ffOswald fs300">Clothings</p>
+          </a>
+        </div>
+        <div class="categoriesCard transition">
+          <a href="#toys">
+            <img class="categoriesImg "
+              src="https://m.media-amazon.com/images/G/02/hardlines/CX/Search_CX_Test/RBS/xcm_banners_toys-games-97cqe_730x970_gb-en.jpg">
+            <p class="categoriesName ffOswald fs300">Toys & Games</p>
+          </a>
+        </div>
+        <div class="categoriesCard transition">
+          <a href="#books">
+            <img class="categoriesImg"
+              src="https://m.media-amazon.com/images/G/02/hardlines/CX/Search_CX_Test/RBS/xcm_banners_books-e1pf4_730x970_gb-en.jpg">
+            <p class="categoriesName ffOswald fs300">Books</p>
+          </a>
+        </div>
+        <div class="categoriesCard transition">
+          <a href="#accesories">
+            <img class="categoriesImg"
+              src="https://m.media-amazon.com/images/G/02/hardlines/CX/Search_CX_Test/RBS/xcm_banners_beauty-personal-care-0kmpj_730x970_gb-en.jpg">
+            <p class="categoriesName ffOswald fs300">Accesories</p>
+          </a>
+        </div>
+        <div class="categoriesCard transition">
+          <a href="#sports">
+            <img class="categoriesImg"
+              src="https://m.media-amazon.com/images/G/02/hardlines/CX/Search_CX_Test/RBS/xcm_banners_sports-outdoors_730x970_gb-en.jpg">
+            <p class="categoriesName ffOswald fs300">Sports</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="container" style="margin: auto;">
+      <h2 id="clothings" class="ffOswald uppercase sectionsName">Clothings</h2>
+      <section class="shoppingSection flex">
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/captain-america-pullover-hoodie-for-adults-by-heroes-villains-avengers-60th-anniversary-5201059161357M.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/5201059161357?fmt=webp&qlt=70&wid=1216&hei=1216">
+            <p class="ffSans thin transition">Captain America Pullover Hoodie</p>
+            <p class="ffSans thin fs300 transition">$69.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/marvel-logo-kawaii-art-pullover-sweatshirt-for-adults-7807107060022M.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7807107060022?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">Marvel Logo Pullover Sweatshirt</p>
+            <p class="ffSans thin fs300 transition">$39.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/doctor-strange-in-the-multiverse-of-madness-runes-pullover-sweatshirt-for-adults-6720107063664M.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6720107063664?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">Doctor Strange Pullover Sweatshirt</p>
+            <p class="ffSans thin fs300 transition">$39.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/spider-man-miles-morales-glitch-pullover-hoodie-for-kids-customized-7200003016ZES.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7200003016ZES?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">SpiderMan Pullover Hoodie</p>
+            <p class="ffSans thin fs300 transition">$34.95</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/patriot-hoodie-for-boys-marvel-rising-customizable-7200002308ZES.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7200002308ZES?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Patriot Hoodie</p>
+            <p class="ffSans thin fs300 transition">$34.95</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/spider-man-hoodie-for-adults-customizable-7200002258ZES.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7200002258ZES?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Spider-Man Hoodie</p>
+            <p class="ffSans thin fs300 transition">$36.95</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/thor-ragnarok-asgardian-warrior-weapon-graphic-hoodie-for-men-customizable-7200001750ZES.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7200001750ZES?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Thor Hoodie</p>
+            <p class="ffSans thin fs300 transition">$36.95</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/captain-america-hoodie-for-adults-customizable-7200000849ZES.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7200000849ZES?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Captain America Hoodie</p>
+            <p class="ffSans thin fs300 transition">$41.95/p>
+          </a>
+        </div>
+      </section>
+      <h2 id="toys" class="ffOswald uppercase sectionsName">Toys & Games</h2>
+      <section class="shoppingSection flex">
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/captain-america-pullover-hoodie-for-adults-by-heroes-villains-avengers-60th-anniversary-5201059161357M.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/1716047094808-1?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">LEGO Captain America's Shield</p>
+            <p class="ffSans thin fs300 transition">$199.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/hulkbuster-talking-action-figure-461013712739.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101047624476?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">Hulkbuster Talking Action Figure</p>
+            <p class="ffSans thin fs300 transition">$49.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/marvel-heroes-and-villains-playing-cards-2-pack-460053789145.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6005105971983?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">Marvel Playing Cards</p>
+            <p class="ffSans thin fs300 transition">$29.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/lego-venomised-groot-76249-673419376631.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/1716047094805-1?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">LEGO Venomized Groot</p>
+            <p class="ffSans thin fs300 transition">$49.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/marvels-avengers-double-sided-puzzle-460053789220.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6005105971984?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Marvel's Avengers Puzzle</p>
+            <p class="ffSans thin fs300 transition">$24.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/marvel-quantum-core-interactive-game-and-bluetooth-speaker-461034143055.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6103047624483?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">Marvel Quantum Bluetooth Speaker</p>
+            <p class="ffSans thin fs300 transition">$36.95</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/black-panther-talking-action-figure-461016658409.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101047624064?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">Black Panther Talking Action Figure</p>
+            <p class="ffSans thin fs300 transition">$29.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/lego-daily-bugle-76178-spider-man-673419339612.html?isProductSearch=1&searchType=autosuggest">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6103047093966?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">LEGO Daily Bugle Spider-Man</p>
+            <p class="ffSans thin fs300 transition">$349.99/p>
+          </a>
+        </div>
+      </section>
+      <h2 id="books" class="ffOswald uppercase sectionsName">Books</h2>
+      <section class="shoppingSection flex">
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/marvel-greatest-comics-100-comics-that-built-a-universe-book-477413163033.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7741055953270?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Marvel Greatest Comics</p>
+            <p class="ffSans thin fs300 transition">$35.00</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/spider-man-5-minute-stories-book-477416024805.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7741055952113?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Spider-Man 5-Minute Stories</p>
+            <p class="ffSans thin fs300 transition">$12.95</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/miles-morales-spider-man-book-477416899823.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7741055952426?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Miles Morales</p>
+            <p class="ffSans thin fs300 transition">$17.95</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/spider-man-into-the-spider-verse-movie-theater-storybook-and-movie-projector-477414173000.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7741055952801?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Spider-Man: Movie Theater</p>
+            <p class="ffSans thin fs300 transition">$19.95</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/the-marvel-age-of-comics-19611978-book-40th-ed.-477413560849.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7741055953453?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">The Marvel Age of Comics</p>
+            <p class="ffSans thin fs300 transition">$30.00</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/marvel-studios-visual-dictionary-477410655968.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7741055952718?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Visual Dictionary</p>
+            <p class="ffSans thin fs300 transition">$30.00</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/marvel-storybook-collection-477412196711.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7741055953163?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Marvel Storybook Collection</p>
+            <p class="ffSans thin fs300 transition">$17.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/loki-where-mischief-lies-book-477419989033.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7741055952936?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Loki: Where Mischief Lies</p>
+            <p class="ffSans thin fs300 transition">$17.99</p>
+          </a>
+        </div>
+      </section>
+      <h2 id="accesories" class="ffOswald uppercase sectionsName">Accesories</h2>
+      <section class="shoppingSection flex">
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/spider-man-stainless-steel-time-teacher-watch-for-kids-843231060296.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6730055371510?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">Spider-Man Watch</p>
+            <p class="ffSans thin fs300 transition">$37.79</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/black-panther-wakanda-forever-backpack-458144717924.html?isProductSearch=1&searchType=autosuggest">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/4404059165461?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">Black Panther Back</p>
+            <p class="ffSans thin fs300 transition">$17.98</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/captain-america-baseball-cap-for-adults-420164983733.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/4500059945914?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">Captain America Baseball Cap</p>
+            <p class="ffSans thin fs300 transition">$29.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/groot-mouse-pad-guardians-of-the-galaxy-vol.-2-customizable-7200001272ZES.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7200001272ZES?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Groot Mousepad</p>
+            <p class="ffSans thin fs300 transition">$12.95</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/loki-variant-l1130-trifold-wallet-customized-7200003223ZES.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7200003223ZES?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Loki Variant Wallet</p>
+            <p class="ffSans thin fs300 transition">$12.95</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/spider-man-ear-headband-for-adults-420215157397.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/4503055216000?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">Spider-Man Ear Headband</p>
+            <p class="ffSans thin fs300 transition">$34.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/spider-man-socks-for-adults-848873080565.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6730059363458?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">Spider-Man Socks</p>
+            <p class="ffSans thin fs300 transition">$20.00</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/venom-crawling-under-name-otterbox-iphone-case-customized-7200002973ZES.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7200002973ZES?fmt=webp&qlt=70&wid=384&hei=384">
+            <p class="ffSans thin transition">Venom Phone Case</p>
+            <p class="ffSans thin fs300 transition">$54.95</p>
+          </a>
+        </div>
+      </section>
+      <h2 id="sports" class="ffOswald uppercase sectionsName">Sports</h2>
+      <section class="shoppingSection flex">
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/black-panther-stainless-steel-canteen-by-corkcicle-810040312267.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6804106363985?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">Black Panther Canteen</p>
+            <p class="ffSans thin fs300 transition">$49.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/spider-man-swim-trunks-for-kids-3921046952298M.html?isProductSearch=1&searchType=regular">
+            <img
+              src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/3921046952298?fmt=webp&qlt=70&wid=2000&hei=2000">
+            <p class="ffSans thin transition">Spider-Man Swim Trunks</p>
+            <p class="ffSans thin fs300 transition">$7.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.amazon.com/Volvik-Marvel-Gift-Set-Captain/dp/B09JL74GR2/ref=sr_1_26?crid=2RPHA6ZAGJZAR&keywords=marvel&qid=1692911378&s=sporting-goods&sprefix=marvel%2Csporting-intl-ship%2C475&sr=1-26">
+            <img src="https://m.media-amazon.com/images/I/51qO343B0dL._AC_SX679_.jpg">
+            <p class="ffSans thin transition">Volvik x Marvel Gift Set</p>
+            <p class="ffSans thin fs300 transition">$24.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.shopdisney.com/groot-mouse-pad-guardians-of-the-galaxy-vol.-2-customizable-7200001272ZES.html?isProductSearch=1&searchType=regular">
+            <img src="https://m.media-amazon.com/images/I/91G73AIEfBL.__AC_SY300_SX300_QL70_FMwebp_.jpg">
+            <p class="ffSans thin transition">Adidas Marvel's Avengers Ball</p>
+            <p class="ffSans thin fs300 transition">$12.95</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.amazon.com/Birdie-Disc-Golf-Marvel-172-174g/dp/B09WBL9HKC/ref=sr_1_55?crid=2RPHA6ZAGJZAR&keywords=marvel&qid=1692911548&s=sporting-goods&sprefix=marvel%2Csporting-intl-ship%2C475&sr=1-55">
+            <img src="https://m.media-amazon.com/images/I/714JNKT3YrL._AC_SX679_.jpg">
+            <p class="ffSans thin transition">Marvel Birdie Disc</p>
+            <p class="ffSans thin fs300 transition">$15.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.amazon.com/Marvel-Spider-Man-Basketball-Avengers-Outdoor/dp/B0BHDZTS9W/ref=sr_1_88?crid=2RPHA6ZAGJZAR&keywords=marvel&qid=1692911624&s=sporting-goods&sprefix=marvel%2Csporting-intl-ship%2C475&sr=1-88">
+            <img src="https://m.media-amazon.com/images/I/91tZ1r+LqwL._AC_SX679_.jpg">
+            <p class="ffSans thin transition">Spider-Man Basketball</p>
+            <p class="ffSans thin fs300 transition">$19.99</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.amazon.com/Hayabusa-Marvel-Elite-Mexican-Boxing/dp/B09QGY5MG7/ref=sr_1_104?crid=2RPHA6ZAGJZAR&keywords=marvel&qid=1692911694&s=sporting-goods&sprefix=marvel%2Csporting-intl-ship%2C475&sr=1-104&th=1">
+            <img src="https://m.media-amazon.com/images/I/81P5AiAlhZL._AC_SX679_.jpg">
+            <p class="ffSans thin transition">Hayabusa Marvel Wrap</p>
+            <p class="ffSans thin fs300 transition">$20.00</p>
+          </a>
+        </div>
+        <div href="" class="shoppingCards">
+          <a target="_blank"
+            href="https://www.amazon.com/Spiderman-Kids-Inflatable-Punching-Exercise/dp/B082342R1Y/ref=sr_1_116?crid=2RPHA6ZAGJZAR&keywords=marvel&qid=1692911755&s=sporting-goods&sprefix=marvel%2Csporting-intl-ship%2C475&sr=1-116">
+            <img src="https://m.media-amazon.com/images/I/51zWSXUHYOL._AC_.jpg">
+            <p class="ffSans thin transition">Spider-Man Punching Bag</p>
+            <p class="ffSans thin fs300 transition">$10.50</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="textGray">
+    <hr style="width: 80%;">
+    <section class="flex upperFooter">
+      <div>
+        <a href="../index.html"><img style="width: 7.5rem; margin-top: 2rem;" src="../assets/icons/footerLogo.png"></a>
+      </div>
+      <div class="flex pagesSection">
+        <div>
+          <ul class="ffSans thin fs300">
+            <li class="footerPages transition flex"><a href="../index.html">Home</a></li>
+            <li class="footerPages transition"><a href="./movies.html">Movies</a></li>
+            <li class="footerPages transition"><a href="./shows.html">Shows</a></li>
+            <li class="footerPages transition"><a href="./comics.html">Comics</a></li>
+            <li class="footerPages transition unabled"><a href="./games.html">Games</a></li>
+            <li class="footerPages transition unabled"><a href="./fanArt.html">Fan Art</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="ffSans thin fs300">
+            <li class="footerPages transition abled"><a href="./games.html">Games</a></li>
+            <li class="footerPages transition abled"><a href="./fanArt.html">Fan Art</a></li>
+            <li class="footerPages transition"><a href="./news.html">News</a></li>
+            <li class="footerPages transition"><a href="./merchandise.html">Merchandise</a></li>
+            <li class="footerPages transition unabled"><a href="./about.html">About Us</a></li>
+            <li class="footerPages transition unabled"><a href="./contact.html">Contact Us</a></li>
+            <li class="footerPages transition unabled"><a href="./terms.html">Terms of Use</a></li>
+            <li class="footerPages transition unabled"><a href="./privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="ffSans thin fs300 abled">
+            <li class="footerPages transition"><a href="./about.html">About Us</a></li>
+            <li class="footerPages transition"><a href="./contact.html">Contact Us</a></li>
+            <li class="footerPages transition"><a href="./terms.html">Terms of Use</a></li>
+            <li class="footerPages transition"><a href="./privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="socials">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/twitterIcon.svg">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/facebookIcon.svg">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/instagramIcon.svg">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/youtubeIcon.svg">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/telegramIcon.svg">
+      </div>
+      <div>
+        <p class="ffSans thin copyright"> &copy; Copyright. All rights reserved.</p>
+      </div>
+    </section>
+  </footer>
+  <script src="../scripts/nav.js"></script>
+</body>
+
+</html>

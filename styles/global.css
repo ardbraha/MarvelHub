@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Open+Sans:wght@300;400&family=Oswald&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  /* Colors */
+  --colorBlack: 0 0% 0%;
+  --colorWhite: 0 0% 100%;
+  --colorRed: 357 92.44% 46.67%;
+  --colorGray: #cccccc;
+
+  /* Font sizes */
+  --fs900: clamp(3rem, 7vw + 1rem, 5rem);
+  --fs800: 2rem;
+  --fs700: 1.875rem;
+  --fs600: 1.4rem;
+  --fs500: 1.125rem;
+  --fs400: 1rem;
+  --fs300: .8rem;
+  --fs200: .5rem;
+  --fs100: .5rem;
+
+  /* Font families */
+  --ffSans: 'Open Sans', sans-serif;
+  --ffCrimson: 'Crimson Text', serif;
+  --ffRoboto: 'Roboto', sans-serif;
+  --ffOswald: 'Oswald', sans-serif;
+}
+
+@media (min-width: 35rem) {
+  :root {
+    --fs800: 3rem;
+    --fs700: 2.25rem;
+    --fs600: 1.75rem;
+    --fs500: 1.375rem;
+    --fs400: 1.125rem;
+    --fs300: 1rem;
+    --fs200: .75rem;
+    --fs200: .5rem;
+  }
+}
+
+@media (min-width: 45rem) {
+  :root {
+    --fs800: 4rem;
+    --fs700: 3rem;
+    --fs600: 2.25rem;
+    --fs500: 1.5rem;
+    --fs400: 1.25rem;
+    --fs300: 1.12rem;
+    --fs200: 1rem;
+    --fs100: .75rem;
+  }
+}
+
+/* ----------------------- */
+/* -------- Reset -------- */
+/* ----------------------- */
+
+/* https://andy-bell.co.uk/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+button,
+a {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set up the body */
+body {
+  font-family: var(--ffSans);
+  font-size: var(--fs400);
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+}
+
+/* Make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove animations for people who have turned them off */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ----------------------- */
+/* --- Utility classes --- */
+/* ----------------------- */
+
+/* General */
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  margin-block: 1.5rem;
+  max-width: 1440px;
+}
+
+.srOnly {
+  /* Screen reader only, it is used if the user is using a screen reader */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
+}
+
+/* colors  */
+
+.textBlack {
+  color: hsl(var(--colorBlack));
+}
+
+.textWhite {
+  color: hsl(var(--colorWhite));
+}
+
+.textRed {
+  color: hsl(var(--colorRed));
+}
+
+.textGray {
+  color: var(--colorGray);
+}
+
+.bgBlack {
+  background-color: hsl(var(--colorBlack));
+}
+
+.bgWhite {
+  background-color: hsl(var(--colorWhite));
+}
+
+.bgRed {
+  background-color: hsl(var(--colorRed));
+}
+
+.bgGray {
+  background-color: var(--colorGray);
+}
+
+/* Typography */
+
+.ffSans {
+  font-family: var(--ffSans);
+}
+
+.ffCrimson {
+  font-family: var(--ffCrimson);
+}
+
+.ffRoboto {
+  font-family: var(--ffRoboto);
+}
+
+.ffOswald {
+  font-family: var(--ffOswald);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.transition {
+  transition: all .25s;
+}
+
+.fs900 {
+  font-size: var(--fs900);
+}
+
+.fs800 {
+  font-size: var(--fs800);
+}
+
+.fs700 {
+  font-size: var(--fs700);
+}
+
+.fs600 {
+  font-size: var(--fs600);
+}
+
+.fs500 {
+  font-size: var(--fs500);
+}
+
+.fs400 {
+  font-size: var(--fs400);
+}
+
+.fs300 {
+  font-size: var(--fs300);
+}
+
+.fs200 {
+  font-size: var(--fs200);
+}
+
+.fs100 {
+  font-size: var(--fs100);
+}
+
+.fs900,
+.fs800,
+.fs700,
+.fs600 {
+  line-height: 1.1;
+}
+
+/* ------------------ */
+/* --- Components --- */
+/* ------------------ */
+
+.mySlides {
+  display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  background-color: #111111;
+}
+
+.slideshow-container img {
+  width: fit-content;
+  filter: brightness(50%);
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  padding: 4rem 3rem;
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+
+.text h1 {
+  padding-left: 1rem;
+  border-left: 4px solid #ff0000;
+}
+
+.text p {
+  margin: .5rem 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.indexBanner {
+  background-image: url('https://www.themoviedb.org/t/p/original/cyecB7godJ6kNHGONFjUyVN9OX5.jpg');
+  background-position: center center;
+  background-size: cover;
+  padding: 1rem;
+}
+
+.indexBanner .content {
+  padding: 5rem;
+  display: inline-block;
+}
+
+@media (min-width:45rem) {
+  .indexBanner .content {
+    margin: 5rem 0rem 10rem -15rem;
+  }
+
+  .text {
+    top: 10%;
+  }
+}
+
+/* ------------------ */
+/* --- mainHeader --- */
+/* ------------------ */
+
+.mainHeader {
+  margin: 1rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: .5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.headerLogo {
+  width: 5rem;
+}
+
+.navToggle {
+  display: none;
+}
+
+.nav li {
+  display: inline-block;
+  padding: .5rem;
+  border-bottom: 1px solid transparent;
+}
+
+.nav li:after,
+.dropdown-content a:after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #ff0000;
+  transition: 300ms;
+}
+
+.nav li:hover:after,
+.dropdown-content a:hover::after {
+  width: 100%;
+}
+
+.dropbtn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: .25rem;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.dropdown-content a {
+  padding: .75rem 1rem;
+  min-width: 9rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#onDesktop {
+  display: none;
+}
+
+.navUser {
+  margin-top: .5rem;
+  width: 30px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+@media (max-width: 57.999rem) {
+  .nav {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5rem 1rem;
+    width: 70%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    flex-direction: column;
+    font-size: var(--fs500);
+    transform: translateX(100%);
+    border-radius: .5rem;
+    text-align: center;
+    transition: all 1s;
+  }
+
+  .nav li {
+    padding-block: .3rem;
+    display: block;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .navToggle {
+    display: block;
+    position: absolute;
+    z-index: 2000;
+    right: 3rem;
+    top: 3rem;
+    background-position: center;
+    background-color: transparent;
+    background-image: url(../assets/icons/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border: none;
+  }
+
+  .blackToggle {
+    background-image: url(../assets/icons/icon-hamburger-second.svg);
+  }
+
+  .nav[data-visible="true"] {
+    display: block;
+    transform: translateX(0);
+  }
+
+  .navToggle[aria-expanded="true"] {
+    background-image: url(../assets/icons/icon-close.svg);
+  }
+
+  .blackToggle[aria-expanded="true"] {
+    background-image: url(../assets/icons/icon-close-second.svg);
+  }
+}
+
+@media (min-width:58rem) {
+  .mainHeader {
+    padding-block: 0;
+  }
+
+  .navToggle {
+    display: none;
+  }
+
+  #onDesktop {
+    display: block;
+  }
+
+  #onMobile {
+    display: none;
+  }
+
+  .slideshow-container {
+    height: 75vh;
+  }
+}
+
+/* ------------------ */
+/* ----- Footer ----- */
+/* ------------------ */
+footer {
+  padding: 2rem;
+  background-color: #111111;
+}
+
+.upperFooter {
+  justify-content: space-between;
+  align-content: center;
+}
+
+.footerPages:hover {
+  color: hsl(var(--colorWhite));
+}
+
+.pagesSection {
+  justify-content: space-evenly;
+}
+
+.socials {
+  text-align: center;
+  margin: 1rem;
+}
+
+.socialsIcons {
+  width: 1.5em;
+  padding: .5rem;
+  margin: .5rem;
+  border-radius: 50%;
+}
+
+.socialsIcons:hover {
+  background-color: hsl(var(--colorWhite));
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+}
+
+.abled {
+  display: none;
+}
+
+@media (min-width: 425px) {
+  .abled {
+    display: block;
+  }
+
+  .unabled {
+    display: none;
+  }
+}
+
+@media (max-width: 49.999rem) {
+  .upperFooter {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 50rem) {
+  .upperFooter {
+    width: 80%;
+    margin: auto;
+  }
+}

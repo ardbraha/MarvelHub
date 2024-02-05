@@ -1,0 +1,77 @@
+.newsBanner {
+  position: relative;
+  padding: 10rem 0;
+  text-align: center;
+}
+
+.newsBanner:after {
+  content: '';
+  background-image: url('https://terrigen-cdn-dev.marvel.com/content/prod/2x/news_articles-mas_mob_01.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
+.newsCategory {
+  margin-block: 1rem;
+  padding-bottom: .5rem;
+  border-bottom: 3px solid red;
+  width: fit-content;
+}
+
+.upperNews {
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.lowerNews {
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.lowerNews div {
+  width: 33.33%;
+  flex: 1;
+}
+
+.lowerNews div:hover,
+.upperNews:hover {
+  color: red;
+}
+
+.newsPages {
+  margin-block: 2rem;
+  justify-content: center;
+}
+
+.newsPages p:hover {
+  color: red;
+}
+
+
+.blackArea {
+  height: 3.5rem;
+  background-color: #111111;
+  margin-block: 1rem;
+}
+
+.nav a {
+  text-shadow: 0 0 5px #ffffff;
+}
+
+@media (min-width: 55rem) {
+  .upperNews {
+    flex-direction: row;
+    margin-bottom: 0;
+    border: none;
+  }
+}

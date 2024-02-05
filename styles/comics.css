@@ -1,0 +1,274 @@
+.comicsBanner {
+  flex-direction: column;
+  padding-top: 3rem;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.comicsBanner:after {
+  content: '';
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/9/90/5c6f1368ed5d0/clean.jpg');
+  background-position: top;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(30%);
+}
+
+.content {
+  margin-top: -1rem;
+  text-align: center;
+  width: 75%;
+}
+
+.content p {
+  margin-block: 1rem 2rem;
+}
+
+.topComics {
+  padding-left: 1.5rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  border-left: 4px solid red;
+}
+
+.comicsGrid {
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3rem;
+}
+
+.comicsGrid .comicsCard:hover {
+  transform: scale(1.025);
+  color: red;
+}
+
+.comicWrapper {
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.comicWrapper:after {
+  content: '';
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(.5rem) brightness(30%);
+  transform: scale(1.1);
+}
+
+.comicWrapper button {
+  margin-top: -1rem;
+}
+
+.mainComic {
+  margin-top: 3rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.imageSection {
+  width: 20rem;
+}
+
+.imageSection img {
+  width: 20rem;
+  max-width: none;
+  margin: auto;
+  width: 15rem;
+}
+
+.comicSection {
+  flex-direction: column;
+}
+
+.comicSection h2 {
+  margin-block: 1rem;
+}
+
+.comicsPadding {
+  padding-block: .75rem;
+}
+
+.comicsContent {
+  width: 75%;
+  margin: auto;
+}
+
+.nav a {
+  text-shadow: 0 0 5px #ffffff;
+}
+
+@media (max-width:35rem) {
+  .comicsBanner:after {
+    background-image: none;
+  }
+
+  .comicsBanner div {
+    padding-inline: 0;
+  }
+}
+
+@media (min-width: 35rem) {
+  .imageSection img {
+    width: 20rem;
+  }
+
+  .comicsGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 45rem) {
+  .comicsBanner {
+    margin-top: 4rem;
+  }
+
+  .comicsGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width:55rem) {
+  .mainComic {
+    flex-direction: row;
+    text-align: start;
+  }
+
+  .comicsContent {
+    margin: 0;
+  }
+
+  .comicSection {
+    margin-left: 2rem;
+    height: 100%;
+    justify-content: start;
+  }
+}
+
+@media (min-width: 60rem) {
+  .imageSection {
+    margin-left: 5rem;
+  }
+
+  .comicsGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 80rem) {
+  .topComics {
+    margin-left: auto;
+  }
+}
+
+.infinityGauntlet:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/9/20/51f6911ce3cc3/background.jpg');
+}
+
+.infinity:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/e/a0/5abc01506bfee/clean.jpg');
+}
+
+.amazingFantasy:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/f/10/598363848588e/detail.jpg');
+}
+
+.civilWar:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/e/f0/511307b2f1200/portrait_uncanny.jpg');
+}
+
+.infinityWar:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/3/40/51f696c2a1263/portrait_uncanny.jpg');
+}
+
+.deathVader:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/7/20/593063e9ae78d/portrait_uncanny.jpg');
+}
+
+.secretEmpire:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/3/20/5900ab4a19359/portrait_uncanny.jpg');
+}
+
+.civilWar2:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/6/b0/5728d5e57a5b2/portrait_uncanny.jpg');
+}
+
+.blackPanther::after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/c/80/567065cfebad5/portrait_uncanny.jpg');
+}
+
+.avengers:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/1/00/51646f8d43394/clean.jpg');
+}
+
+.thanos:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/5/03/582382b737a22/clean.jpg');
+}
+
+.deadpool:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/8/a0/562e73baa2c04/portrait_uncanny.jpg');
+}
+
+.secretWars:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/c/70/5cb736a3cdd49/portrait_uncanny.jpg');
+}
+
+.ultimateSpiderMan:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/9/90/519b7e7eb534a/detail.jpg');
+}
+
+.xmenGold:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/4/04/58efdcf287a6f/portrait_uncanny.jpg');
+}
+
+.oldmanLogan:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/7/60/5939990e7d1ec/portrait_uncanny.jpg');
+}
+
+.astonishingXmen:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/a/50/5967e7b0e9d5d/portrait_uncanny.jpg');
+}
+
+.spiderMan:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/b/e0/56a7c0725bcbb/portrait_uncanny.jpg');
+}
+
+.allnewGuardiansofthegalaxy:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/6/30/5900a84360ddf/portrait_uncanny.jpg');
+}
+
+.theAmazingSpiderMan:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/d/40/5196582d03800/portrait_uncanny.jpg');
+}
+
+.weaponX:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/6/c0/58e7f904ee230/portrait_uncanny.jpg');
+}
+
+.peterParker:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/9/40/5941aaad594a6/portrait_uncanny.jpg');
+}
+
+.xmenblue:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/7/40/58e7f9a46732d/portrait_uncanny.jpg');
+}
+
+.captainAmerica:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/c/b0/58ee3fbc609c3/portrait_uncanny.jpg');
+}
+
+.deadpoolKillsTheMarvelUniverseAgain:after {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/e/00/5955392a07557/clean.jpg');
+}

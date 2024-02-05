@@ -1,0 +1,396 @@
+.mediabanner{
+  position: relative;
+  padding: 1rem;
+}
+
+.mediabanner header {
+  margin-top: 0;
+}
+
+.mediabanner:after {
+  content:'';
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  filter: brightness(50%);
+}
+
+.mediabanner .content {
+  width: 100%;
+  text-align: center;
+  padding-top: 7rem;
+  padding-bottom: 1rem;
+}
+
+.mediabanner .content .mediaAbt {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.mediabanner .content h1 {
+  letter-spacing: 4px;
+}
+
+.mediabanner .content .type {
+  padding: 1rem 0 .5rem 0;
+  font-weight: 200;
+}
+
+.redButton {
+  margin-top: 5rem;
+  padding: .5rem 1rem;
+  border: 2px solid hsl(var(--colorRed));
+  background-color: transparent;
+}
+
+.redButton:hover {
+  background-color: hsl(var(--colorRed));
+}
+
+.mediaButtons {
+  width: 100%;
+  justify-content: center;
+}
+
+.saveIcon {
+  width: 25px;
+  height: 25px;
+  margin-top: 80px;
+}
+
+@media (min-width: 45rem) {
+  .mediabanner .content {
+    text-align: start;
+    padding-left: 4rem;
+    padding-top: 12rem;
+    padding-bottom: 15rem;
+  }
+
+  .mediabanner .content .mediaAbt {
+    max-width: 525px;
+    text-align: start ;
+    margin: 0;
+  }
+
+  .mediaButtons {
+    width: 100%;
+    justify-content: start;
+  }
+}
+
+@media (min-width: 50rem) {
+  .mediabanner .content h1 {
+    width: 70%;
+  }
+}
+
+/* MOVIES */
+
+.ironman:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/cyecB7godJ6kNHGONFjUyVN9OX5.jpg');
+}
+
+.ironmantwo:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/jesRqfL9v6HNnowe795xjmuKUXl.jpg');
+}
+
+.theincrediblehulk:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/jPu8yiadqgzwFPGKJmGo637ASVP.jpg');
+}
+
+.thor:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/1wOu8rdvPxU1ObHi20VcRhfNpbo.jpg');
+}
+
+.captainamericathefirstavanger:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/mosT7aVins6Wq6n12OZdh2NMZaA.jpg');
+}
+
+.theavengers:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/kuzMTPIhWzv7oo2HE7o7m2MpgCh.jpg');
+}
+
+.ironmanthree:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/aFTYFqrWp4RS46Twm87l5e0ItYb.jpg');
+}
+
+.thorthedarkworld:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/au3obTadLf2MkfBMTEORjvzFS7I.jpg');
+}
+
+.captainamericathewindsoldier:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/ztlNUKRh3ykZEX7WWFQGMdRe6y4.jpg');
+}
+
+.guardiansofthegalaxy:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/7O8ZDkC0pZNLIuux2w2WCUE6hLD.jpg');
+}
+
+.avengersageofultron:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/6YwkGolwdOMNpbTOmLjoehlVWs5.jpg');
+}
+
+.antman:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/bQyNjCVJtREK3Meql1dUH3sYMFm.jpg');
+}
+
+.captainamericacivilwar:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/uXzQDq63nkrRbj2sl0OFJWmOPZg.jpg');
+}
+
+.doctorstrange:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/9gupoZ8IYeHx9obMtWqNstaYlDa.jpg');
+}
+
+.guardiansofthegalaxyvol2:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/aJn9XeesqsrSLKcHfHP4u5985hn.jpg');
+}
+
+.spidermanhomecoming:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/9iFpsmj1jvdq7DYdRCCZQmldo74.jpg');
+}
+
+.thorragnarok:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/kaIfm5ryEOwYg8mLbq8HkPuM1Fo.jpg');
+}
+
+.blackpanther:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/4cQLZDqV1oYbC6Gg5Qp1q8lTgw8.jpg');
+}
+
+.avangersinfinitywar:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/3zvdUJHTXEOGrn0sFC2kWUczeCX.jpg');
+}
+
+.antmanandthewasp:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/70PngrJwPG7AI0uDxou5n7uBZiU.jpg');
+}
+
+.captainmarvel:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/iNUuGUIHeeGsvOPxMRBnytpxxlz.jpg');
+}
+
+.avengersendgame:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/h9q0ozwMWy7CK5U7FSZsMVtbsCQ.jpg');
+}
+
+.spidermanfarfromhome:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/q8HcItKnJYBQa2XrB4Ug6Q8BeNe.jpg');
+}
+
+.blackwidow:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/keIxh0wPr2Ymj0Btjh4gW7JJ89e.jpg');
+}
+
+.shangchiandthelegendofthetenrings:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/cinER0ESG0eJ49kXlExM0MEWGxW.jpg');
+}
+
+.eternals:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg');
+}
+
+.spidermannowayhome:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg');
+}
+
+.doctorstrangeinthemultiverseofmadness:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/wcKFYIiVDvRURrzglV9kGu7fpfY.jpg');
+}
+
+.thorloveandthunder:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/qBKEVzAcqkFFBdxNBQFocdZhIlY.jpg');
+}
+
+.blackpantherwakandaforever:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/6QZmkUIvmBbtkzMWCkx1slCL0Um.jpg');
+}
+
+.antmanandthewaspquantumania:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/m8JTwHFwX7I7JY5fPe4SjqejWag.jpg');
+}
+
+.guardiansofthegalaxyvol3:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/rR1vGEC1csvWfQ9eLKsSWukfiLp.jpg');
+}
+
+.themarvels:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/2o1r5lkILQhmK9DrHDGAowU984P.jpg');
+}
+
+.deadpool3:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/AedbvbzVrdGMhi9oFPhorizbtTL.jpg');
+}
+
+.captainamericabravenewworld:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/6UnLsHGbtmwd8V5ETStEHRKNWT7.jpg');
+}
+
+.thunderbolts:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/vzVojqW0zF9QrXVGuj8PwhxWACD.jpg');
+}
+
+.blade:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/hFtJz4TvoiJJcw2ZOMdhK22aU9P.jpg');
+}
+
+.fantasticfour:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/qlwBv4v6EoeN2JxGWziT2kSyoVe.jpg');
+}
+
+.avengersthekangdynasty:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/uR952NrgispGuyqIdUbkR24vE0u.jpg');
+}
+
+.avengerssecretwars:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/jqFC2WjYF07hx2X7cs0XmY9jBX6.jpg');
+}
+
+.spiderman:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/2PDTWfuBWQKVC7aPAqJK5UCpz08.jpg');
+}
+
+.spiderman2:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/6al048Lat3eLVQOuKtc9h6Tu94d.jpg');
+}
+
+.spiderman3:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/gLZMjwGDEg8Snm7iZTJmJH0QakD.jpg');
+}
+
+.theamazingspiderman:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/mDLt2u4W6qJv4BJdgv1LqrANJ9A.jpg');
+}
+
+.xmandaysoffuturepast:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/fctQU5MoXgJ5pNMljFzlEFXwfSu.jpg');
+}
+
+.deadpool:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/k2VX0gFu2BEJhvduQTq2ioYp8z7.jpg');
+}
+
+.xmenapocalypse:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/2ex2beZ4ssMeOduLD0ILzXKCiep.jpg');
+}
+
+.deadpool2:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/1CzUuIdalmARzfYyEX3vGmBy6dn.jpg');
+}
+
+.venom:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/hNsYUryiwxcdeTMkaBcPF3iEg0p.jpg');
+}
+
+.logan:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/9X7YweCJw3q8Mcf6GadxReFEksM.jpg');
+}
+
+.darkphoenix:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/j9ZV0UOagjQ4seR8Hd5N6JfwdTP.jpg');
+}
+
+/* SHOWS */
+
+.agentsofshield:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/80BRASQnT9KT7BkFeEI0EdeRIF3.jpg');
+}
+
+.daredevil:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/2PrYnQR8YPei5vCVRwJXnwMqMyR.jpg');
+}
+
+.jessicajones:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/g9ju2o4LioYYOyihBvf9lVX8XL.jpg');
+}
+
+.lukecage:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/gV2PVqsNBoklmg7h3ftLF1njoGg.jpg');
+}
+
+.ironfist:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/xHCfWGlxwbtMeeOnTvxUCZRGnkk.jpg');
+}
+
+.thedefenders:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/cfuKSncV7m6qFzEpARmzSDcr9nc.jpg');
+}
+
+.inhumans:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/9GNdPoCSzWYeo2eYKFVLvzcG6Wg.jpg');
+}
+
+.thepunisher:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/j5aOOtsJinQtyRaqiB12TTRHdeX.jpg');
+}
+
+.runaways:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/pHURd96EW167jUd2Jf8XpgTiLJV.jpg');
+}
+
+.cloackdagger:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/4amkATUf2mh5QL9OQ3WmHQqx9wk.jpg');
+}
+
+.thefalconandthewintersoldier:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/JB17sIsU53NuWVUecOwrCA0CUp.jpg');
+}
+
+.wandavision:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/33j33midGw49BBxiqlNZeZ6PZ0O.jpg');
+}
+
+.loki:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/f5tjVQtxihaVwXOdpITSPeIqlpX.jpg');
+}
+
+.whatif:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/rCeG16zXk2hWq8UhbarFsA52cgI.jpg');
+}
+
+.hawkeye:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/3LaFD61Iy3b5TQPLpsZf1NwiUrR.jpg');
+}
+
+.shehulk:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/xdcQMtVf0JXOhgXOOTAI6tNQXRP.jpg');
+}
+
+.moonknight:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/lZFLObcr3pazcEkBcHGYjw4skGW.jpg');
+}
+
+.msmarvel:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/lod5D5dlkX4l7zqXbMGqQyVEks6.jpg');
+}
+
+.secretinvasion:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/wqhaKfvOpLzot9PCle3SMYI4lw6.jpg');
+}
+
+.iamgroot:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/226ESFYVfIKKRbgAeb7u6BlA6gt.jpg');
+}
+
+.ironheart:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/3Wh6RYyoqBHkjugcfVrypjH8qQv.jpg');
+}
+
+.agatha:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/wPnapuJNdWe27IAE5z2Hieo4Yh.jpg');
+}
+
+.echo:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/sWm4ALjmW46c4ipNZmv6rjC2cd8.jpg');
+}
+
+.daredevilbornagain:after {
+  background-image: url('https://www.themoviedb.org/t/p/original/5NGuM3zv8KjFg7k0FBZ0UdeLFGv.jpg');
+}

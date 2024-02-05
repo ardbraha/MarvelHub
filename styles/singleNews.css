@@ -1,0 +1,38 @@
+.newsContainer {
+  max-width: 1300px;
+  margin: 2rem auto 5rem auto;
+  padding: 1rem;
+}
+
+.newsContainer h1 {
+  padding-left: 1.5rem;
+  border-left: 4px solid red;
+}
+
+.newsContainer p {
+  line-height: 1.7;
+}
+
+.mainImage {
+  margin-block: 1rem 2rem;
+  width: 100%;
+}
+
+.newsCat {
+  margin-block: -1.5rem 2rem;
+}
+
+.nav a {
+  text-shadow: 0 0 5px #ffffff;
+}
+
+@media (min-width: 768px) {
+  .mainImage {
+    padding-inline: 5rem;
+    margin-block: 3rem 2rem;
+  }
+
+  .newsContainer {
+    margin: 5rem auto 7.5rem auto;
+  }
+}

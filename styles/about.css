@@ -1,0 +1,52 @@
+.imagesContainer {
+  flex-direction: column;
+}
+
+.mainImages {
+  width: 75%;
+  margin: auto;
+}
+
+main h2,
+main h3,
+.mainText {
+  text-align: center;
+  line-height: 1.75;
+}
+
+main h3,
+main h2 {
+  padding-bottom: 1rem;
+  width: fit-content;
+  border-bottom: .5px solid #111111;
+  margin: 2rem auto;
+}
+
+main hr {
+  margin: 5rem 0;
+}
+
+.mainContent {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.numberedWork {
+  margin: 1rem 2rem;
+}
+
+.nav a {
+  text-shadow: 0 0 5px #ffffff;
+}
+
+@media (min-width:45rem) {
+  .imagesContainer {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .mainImages {
+    width: 50%;
+    margin: 0;
+  }
+}

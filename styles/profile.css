@@ -1,0 +1,323 @@
+.contentWrapper {
+  max-width: 1300px;
+  margin: 3rem auto 4rem auto;
+  padding-inline: 1rem;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.secondaryNav {
+  padding: 0 1rem 0 0;
+  border-right: 1px solid rgb(216, 216, 216);
+}
+
+.secondaryPages {
+  padding: 0.5rem;
+  margin-block: 0.5rem;
+  align-items: center;
+}
+
+.secondaryPages:hover {
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+}
+
+.navImg {
+  width: 25px;
+}
+
+.navPage {
+  display: none;
+}
+
+.infoContainer {
+  flex-direction: column;
+}
+
+.delete:hover {
+  color: hsla(357 92.44% 46.67%);
+}
+
+.deleteWindow {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(450px, 70%);
+  background-color: #ffffff;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.lockScroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.deleteWindow .windowButton {
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+}
+
+.cancelButton {
+  border: 1px solid #6d6d6d;
+}
+
+.cancelButton:hover {
+  background-color: #dedede;
+}
+
+.deleteButton {
+  background-color: #ff0000;
+  border: 1px solid #ff0000;
+}
+
+.deleteButton:hover{
+  background-color: #de0000;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.hidden {
+  display: none;
+}
+
+.profileSection {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.profileForm {
+  text-align: start;
+  width: 200px;
+}
+
+.profileForm * {
+  width: 100%;
+}
+
+.profileImg {
+  width: 150px;
+  margin: auto;
+}
+
+.profileImg img {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}
+
+.profileForm label {
+  margin-bottom: -0.75rem;
+}
+
+.input {
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.25rem;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+}
+
+.textarea {
+  resize: none;
+  padding-bottom: 5rem;
+}
+
+.profileText {
+  text-align: center;
+  margin-block: 1rem 2rem;
+}
+
+.changesButton {
+  border: 1px solid transparent;
+  border-radius: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  max-width: 300px;
+}
+
+.changesButton:hover {
+  background-color: #ffffff;
+  border: 1px solid hsla(357 92.44% 46.67%);
+  color: hsla(357 92.44% 46.67%);
+}
+
+.activePage {
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+}
+
+.communitySection {
+  justify-content: start;
+}
+
+.communityWrapper {
+  width: 90%;
+}
+
+.communityImg {
+  width: 75px;
+  height: 75px;
+}
+
+.communityCard {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.communityCard:hover {
+  background-color: #f2f2f2;
+}
+
+.fanPfp {
+  width: 25px;
+  border-radius: 50%;
+  border: 0.5px solid black;
+}
+
+.marginPfp {
+  margin-left: -12.5px;
+}
+
+.bookmarksSection {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mediaCard {
+  width: 150px;
+  height: 250px;
+  position: relative;
+}
+
+.mediaCard img {
+  border-radius: 0.25rem;
+  height: 100%;
+}
+
+.mediaCardName {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem 1rem;
+  display: none;
+}
+
+.mediaCardName h3 {
+  font-size: 1.5rem;
+}
+
+.cardMovieType {
+  font-size: 0.75rem;
+  background-color: rgba(68, 68, 68, 0.637);
+  padding: 0.25rem 0.5rem;
+  border-radius: 5rem;
+  display: inline-block;
+}
+
+.filledBookmarksIcon {
+  position: absolute;
+  top: -100px;
+  right: 7.5px;
+  width: 35px;
+}
+
+.mediaCard:hover .mediaCardName {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+
+.mediaCard:hover .cardMovieType {
+  display: none;
+}
+
+.nav a {
+  text-shadow: 0 0 5px #ffffff;
+}
+
+@media (min-width: 768px) {
+  .contentWrapper {
+    padding-inline: 2rem;
+  }
+
+  .secondaryNav {
+    width: 200px;
+  }
+
+  .navPage {
+    display: block;
+  }
+
+  .profileForm {
+    width: 350px;
+  }
+
+  .profileImg {
+    width: 200px;
+  }
+
+  .community {
+    margin: 2rem;
+  }
+
+  .communityCard {
+    margin: 0.5rem 2rem;
+  }
+
+  .communityImg {
+    width: 125px;
+    height: 125px;
+  }
+
+  .mediaCard {
+    height: 300px;
+    width: 200px;
+  }
+
+  .mediaCard:hover .cardMovieType {
+    display: inline;
+  }
+
+  .filledBookmarksIcon {
+    top: -125px;
+  }
+
+  .deleteWindow {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .contentWrapper {
+    margin-top: 5rem;
+  }
+
+  .profileForm {
+    width: 400px;
+  }
+
+  .input {
+    padding-block: 0.75rem;
+  }
+
+  .textarea {
+    height: 250px;
+  }
+}

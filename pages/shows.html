@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/mediaGrid.css">
+  <link rel="stylesheet" href="../styles/loader.css">
+  <link rel="icon" href="../assets/icons/icon.png">
+  <title>MarvelHub | Shows</title>
+</head>
+
+<body style="background-color: #111111;">
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+  <script src="../scripts/loader.js"></script>
+  <header class="mainHeader flex">
+    <div class="headerLogo">
+      <a href="../index.html"><img src="../assets/icons/icon.png"></a>
+    </div>
+    <button data-visible="false" class="navToggle pointer transition"></button>
+    <ul class="flex nav fs400 ffSans textWhite transition">
+      <li class="pointer transition"><a href="../index.html">Home</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/movies.html">Movies</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/shows.html">Shows</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/comics.html">Comics</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/games.html">Games</a></li>
+      <li id="onDesktop" class="dropdown pointer transition">
+        <button class="dropbtn pointer textWhite">Media &#9662;</button>
+        <div class="dropdown-content textWhite">
+          <a class="transition" href="../pages/movies.html">Movies</a>
+          <a class="transition" href="../pages/shows.html">Shows</a>
+          <a class="transition" href="../pages/comics.html">Comics</a>
+          <a class="transition" href="../pages/games.html">Games</a>
+        </div>
+      </li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/fanArt.html">Fan Art</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/news.html">News</a></li>
+      <li id="onDesktop" class="dropdown pointer transition">
+        <button class="dropbtn pointer textWhite">Community &#9662;</button>
+        <div class="dropdown-content">
+          <a class="transition" href="../pages/fanArt.html">Fan Art</a>
+          <a class="transition" href="../pages/news.html">News</a>
+        </div>
+      </li>
+      <li class="pointer transition"><a href="../pages/merchandise.html">Merchandise</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/about.html">About Us</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/contact.html">Contact Us</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/login.html">Log In</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/register.html">Register</a></li>
+      <li id="onMobile" class="pointer transition"><a href="../pages/profile.html">Profile</a></li>
+      <li id="onDesktop" class="dropdown pointer transition">
+        <button class="dropbtn pointer textWhite">About &#9662;</button>
+        <div class="dropdown-content">
+          <a class="transition" href="../pages/about.html">About Us</a>
+          <a class="transition" href="../pages/contact.html">Contact Us</a>
+        </div>
+      </li>
+      <li id="onDesktop" class="dropdown pointer transition">
+        <button class="dropbtn pointer textWhite"><a href="profile.html"><img class="navUser"
+              src="../assets/icons/user.svg"></a></button>
+        <div class="dropdown-content">
+          <a class="transition" href="./login.html">Log In</a>
+          <a class="transition" href="./register.html">Register</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+  <section>
+    <div class="slideshow-container">
+      <a href="./shows/daredevil.html" class="mySlides fade">
+        <img src="https://www.themoviedb.org/t/p/original/2PrYnQR8YPei5vCVRwJXnwMqMyR.jpg">
+        <div class="text">
+          <h1 class="fs700 ffOswald bold uppercase">Daredevil (2015)</h1>
+        </div>
+      </a>
+      <a href="./shows/agentsofshield.html" class="mySlides fade">
+        <img src="https://www.themoviedb.org/t/p/original/80BRASQnT9KT7BkFeEI0EdeRIF3.jpg">
+        <div class="text">
+          <h1 class="fs700 ffOswald bold uppercase">Agents of S.H.I.E.L.D. (2013)</h1>
+        </div>
+      </a>
+      <a href="./shows/thepunisher.html" class="mySlides fade">
+        <img src="https://www.themoviedb.org/t/p/original/9czVEnJemvP6gcJlMEjUeuISL1c.jpg">
+        <div class="text">
+          <h1 class="fs700 ffOswald bold uppercase">The Punisher (2017)</h1>
+        </div>
+      </a>
+      <a href="./shows/wandavision.html" class="mySlides fade">
+        <img src="https://www.themoviedb.org/t/p/original/33j33midGw49BBxiqlNZeZ6PZ0O.jpg">
+        <div class="text">
+          <h1 class="fs700 ffOswald bold uppercase]">WandaVision (2021)</h1>
+        </div>
+      </a>
+      <div style="text-align:center; display: none;"><span class="dot"></span><span class="dot"></span><span
+          class="dot"></span><span class="dot"></span> </div>
+  </section>
+  <main class="textWhite mediaWrapper container" style="margin: auto;">
+    <h2 class="mediaCaption ffOswald">Top Shows</h2>
+    <section class="mediaGrid grid">
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/gHUCCMy1vvj58tzE3dZqeC9SXus.jpg">
+        <a href="./shows/agentsofshield.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Agents of S.H.I.E.L.D. (2013)</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Drama</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/p7oImOiZAUF4DCreZuE11hWJRyA.jpg">
+        <a href="./shows/daredevil.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Daredevil (2015)</h3>
+          <div>
+            <p class="cardMovieType">Crime</p>
+            <p class="cardMovieType">Drama</p>
+            <p class="cardMovieType">Action & Adventure</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/oxnWofiE9fHOgUfs9NJa6nG6NTR.jpg">
+        <a href="./shows/jessicajones.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Jessica Jones (2015)</h3>
+          <div>
+            <p class="cardMovieType">Drama</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/quTfV803fGaSADzTeEqCbIZnt9d.jpg">
+        <a href="./shows/lukecage.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Luke Cage (2016)</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Drama</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+            <p class="cardMovieType">Crime</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/4l6KD9HhtD6nCDEfg10Lp6C6zah.jpg">
+        <a href="./shows/ironfist.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Iron Fist (2017)</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Drama</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/49XzINhH4LFsgz7cx6TOPcHUJUL.jpg">
+        <a href="./shows/thedefenders.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">The Defenders (2017)</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Crime</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/zKfGip55oJ9tdzhyd9ayGyFFhuo.jpg">
+        <a href="./shows/inhumans.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Inhumans (2017)</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Drama</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/tM6xqRKXoloH9UchaJEyyRE9O1w.jpg">
+        <a href="./shows/thepunisher.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">The Punisher (2017)</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Crime</p>
+            <p class="cardMovieType">Drama</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/zceMrfO17AQkeWJZNra4O90s1vE.jpg">
+        <a href="./shows/runaways.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Runaways (2017)</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Crime</p>
+            <p class="cardMovieType">Drama</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/pYnRJuBPEqZO1o4fcxBTgmKNHfy.jpg">
+        <a href="./shows/cloackdagger.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Cloak & Dagger (2018)</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Drama</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/6kbAMLteGO8yyewYau6bJ683sw7.jpg">
+        <a href="./shows/thefalconandthewintersoldier.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">The Falcon and the Winter Soldier (2021)</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Drama</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/frobUz2X5Pc8OiVZU8Oo5K3NKMM.jpg">
+        <a href="./shows/wandavision.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">WandaVision (2021)</h3>
+          <div>
+            <p class="cardMovieType">Mystery</p>
+            <p class="cardMovieType">Drama</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <h2 class="mediaCaption ffOswald">Coming soon ...</h2>
+    <section class="mediaGrid grid">
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/ha1kackPwP1BLtyibzuv5hABiDk.jpg">
+        <a href="./shows/ironheart.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Ironheart</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Drama</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/A4JyrpPCsw57E0JHcZK7TDPVPqP.jpg">
+        <a href="./shows/agatha.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Agatha: Coven of Chaos</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+            <p class="cardMovieType">Drama</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/3bv5Dv3YmQfzg5ckQMwzCUQ89hU.jpg">
+        <a href="./shows/echo.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Echo (2023)</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Crime</p>
+            <p class="cardMovieType">Drama</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/t2MKhbLkSlMduIukClOXFMK9LhP.jpg">
+        <a href="./shows/daredevilbornagain.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Daredevil: Born Again</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Drama</p>
+            <p class="cardMovieType">Crime</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <h2 class="mediaCaption ffOswald">All shows</h2>
+    <section class="mediaGrid grid">
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/oJdVHUYrjdS2IqiNztVIP4GPB1p.jpg">
+        <a href="./shows/loki.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Loki (2021))</h3>
+          <div>
+            <p class="cardMovieType">Drama</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg">
+        <a href="./shows/whatif.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">What If...? (2021)</h3>
+          <div>
+            <p class="cardMovieType">Animation</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+            <p class="cardMovieType">Action & Adventure</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/uQdAET8dl403BIVktl5gjtzXRDT.jpg">
+        <a href="./shows/hawkeye.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Hawkeye (2021)</h3>
+          <div>
+            <p class="cardMovieType">Drama</p>
+            <p class="cardMovieType">Comedy</p>
+            <p class="cardMovieType">Action & Adventure</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/hJfI6AGrmr4uSHRccfJuSsapvOb.jpg">
+        <a href="./shows/shehulk.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">She-Hulk: Attorney at Law (2022)</h3>
+          <div>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+            <p class="cardMovieType">Comedy</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/vKDUmKO6F9bSKKyHhg7YGbgcEeF.jpg">
+        <a href="./shows/moonknight.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Moon Knight (2022)</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Mystery</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/ls2Hl8CXmqEHvkDqkN3fRtmDodK.jpg">
+        <a href="./shows/msmarvel.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Ms. Marvel (2022)</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Comedy</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/f5ZMzzCvt2IzVDxr54gHPv9jlC9.jpg">
+        <a href="./shows/secretinvasion.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">Secret Invasion (2023)</h3>
+          <div>
+            <p class="cardMovieType">Action & Adventure</p>
+            <p class="cardMovieType">Drama</p>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+          </div>
+        </a>
+      </div>
+      <div class="mediaCard pointer">
+        <img src="https://www.themoviedb.org/t/p/original/3QfQYECgu6DX5UUWCBvv1Fl0BAJ.jpg">
+        <a href="./shows/iamgroot.html" class="mediaCardName">
+          <h3 class="bold ffRoboto">I Am Groot (2023)</h3>
+          <div>
+            <p class="cardMovieType">Sci-Fi & Fantasy</p>
+            <p class="cardMovieType">Animation</p>
+            <p class="cardMovieType">Family</p>
+            <p class="cardMovieType">Comedy</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="textGray">
+    <hr style="width: 80%;">
+    <section class="flex upperFooter">
+      <div>
+        <a href="../index.html"><img style="width: 7.5rem; margin-top: 2rem;" src="../assets/icons/footerLogo.png"></a>
+      </div>
+      <div class="flex pagesSection">
+        <div>
+          <ul class="ffSans thin fs300">
+            <li class="footerPages transition flex"><a href="../index.html">Home</a></li>
+            <li class="footerPages transition"><a href="./movies.html">Movies</a></li>
+            <li class="footerPages transition"><a href="./shows.html">Shows</a></li>
+            <li class="footerPages transition"><a href="./comics.html">Comics</a></li>
+            <li class="footerPages transition unabled"><a href="./games.html">Games</a></li>
+            <li class="footerPages transition unabled"><a href="./fanArt.html">Fan Art</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="ffSans thin fs300">
+            <li class="footerPages transition abled"><a href="./games.html">Games</a></li>
+            <li class="footerPages transition abled"><a href="./fanArt.html">Fan Art</a></li>
+            <li class="footerPages transition"><a href="./news.html">News</a></li>
+            <li class="footerPages transition"><a href="./merchandise.html">Merchandise</a></li>
+            <li class="footerPages transition unabled"><a href="./about.html">About Us</a></li>
+            <li class="footerPages transition unabled"><a href="./contact.html">Contact Us</a></li>
+            <li class="footerPages transition unabled"><a href="./terms.html">Terms of Use</a></li>
+            <li class="footerPages transition unabled"><a href="./privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="ffSans thin fs300 abled">
+            <li class="footerPages transition"><a href="./about.html">About Us</a></li>
+            <li class="footerPages transition"><a href="./contact.html">Contact Us</a></li>
+            <li class="footerPages transition"><a href="./terms.html">Terms of Use</a></li>
+            <li class="footerPages transition"><a href="./privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="socials">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/twitterIcon.svg">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/facebookIcon.svg">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/instagramIcon.svg">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/youtubeIcon.svg">
+        <img class="socialsIcons bgGray pointer" src="../assets/icons/telegramIcon.svg">
+      </div>
+      <div>
+        <p class="ffSans thin copyright"> &copy; Copyright. All rights reserved.</p>
+      </div>
+    </section>
+  </footer>
+  <script src="../scripts/slideshow.js"></script>
+  <script src="../scripts/nav.js"></script>
+</body>
+
+</html>
